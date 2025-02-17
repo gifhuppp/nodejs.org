@@ -46,7 +46,7 @@ server.on('request', (request, response) => {
 });
 ```
 
-When an HTTP request hits the server, node calls the request handler function
+When an HTTP request hits the server, Node calls the request handler function
 with a few handy objects for dealing with the transaction, `request` and
 `response`. We'll get to those shortly.
 
@@ -515,7 +515,7 @@ and message would be. As usual with errors, you should consult the
 
 On the response, we'll just log the error to `stderr`.
 
-```js
+```cjs
 const http = require('node:http');
 
 http
@@ -538,7 +538,7 @@ http
   .listen(8080);
 ```
 
-```js
+```mjs
 import http from 'node:http';
 
 http
